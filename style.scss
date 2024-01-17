@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+  }
+   
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+.content{
+    max-width: 800px;
+    margin:auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+
+    background-color: darkgray;
+
+        &__link {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        }
+}
+
+@media screen and (min-width: 800px) {
+    .nav {
+        flex-direction: column;
+    }
+    
+}
+
+.title {
+    background-image: url(welcome.jpg);
+    height: 23rem;
+    background-size: cover;
+    background-position: center;
+
+    &__main {
+        color: white;
+        font-size: 80px;
+        text-align: center;
+        padding-top: 40px;
+
+        }
+    }
+.title__sub {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.plot {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 206, 190);
+    height: 400px;
+    justify-content: space-around;
+
+    &__title {
+        columns: black;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+.plot__title--sub {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.plot__paragraph {
+    padding-left: 250px;
+    padding-top: 100px;
+    padding-right: 80px;
+}
+
+.plot__pic {
+    // background: url(welcome.jpg);
+    // float: center;
+    // padding-bottom:80px;
+    // padding-left: 50px;
+}
+
+.characters {
+    background-image: url(rey-standing.jpg);
+    height: 23rem;
+    background-size: cover;
+    background-position: top;
+}
+
+.circles_large {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
