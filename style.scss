@@ -10,6 +10,11 @@ html {
     box-sizing: inherit;
   }
 
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
 .content{
     max-width: 800px;
     margin:auto;
@@ -28,13 +33,6 @@ html {
         }
 }
 
-@media screen and (min-width: 800px) {
-    .nav {
-        flex-direction: column;
-    }
-    
-}
-
 .title {
     background-image: url(welcome.jpg);
     height: 23rem;
@@ -50,7 +48,7 @@ html {
         }
     }
 .title__sub {
-    color: white;
+    color: beige;
     font-size: 40px;
     text-align: center;
 }
@@ -59,43 +57,142 @@ html {
     display: flex;
     flex-direction: column;
     background-color: rgb(219, 206, 190);
-    height: 400px;
-    justify-content: space-around;
+    height: 350px;
+    z-index: 99;
 
     &__title {
+        // padding-top: 20rem;
         columns: black;
         font-size: 40px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
 
-.plot__title--sub {
+.plot__sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.plot__sub--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    height: 9rem;
+}
+
+.plot__title--subtitle {
     text-align: center;
     padding-top: 30px;
 }
 
-.plot__paragraph {
-    padding-left: 250px;
-    padding-top: 100px;
-    padding-right: 80px;
-}
 
-.plot__pic {
+.plot__sub--pic {
     // background: url(welcome.jpg);
     // float: center;
     // padding-bottom:80px;
     // padding-left: 50px;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+
 }
 
 .characters {
     background-image: url(rey-standing.jpg);
     height: 23rem;
     background-size: cover;
-    background-position: top;
+    background-position: center;
+        
+        &__content {
+            height: 21rem;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+}
+
+.characters__title {
+    padding-top: 2rem;
+    font-size: 40px;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circles_smallest1 {
+    background-image: url(luke.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin: .4rem;
+}
+
+.circles_small1 {
+    background-image: url(leia.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin: .4rem;
+}
+.circles_medium1 {
+    background-image: url(finn.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: .4rem;
 }
 
 .circles_large {
-    height: 20px;
-    width: 20px;
+    background-image: url(rey.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
+    margin: .4rem;
+}
+
+.circles_small {
+    background-image: url(kylo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin: .4rem;
+}
+.circles_medium {
+    background-image: url(isaac.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: .4rem;
+}
+
+.circles_smallest {
+    background-image: url(bb8.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin: .4rem;
 }
