@@ -1,198 +1,201 @@
 html {
-    box-sizing: border-box;
-  }
-   
-  *,
-  *:before,
-  *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
 
-  .main {
-    display: flex;
-    flex-direction: column;
-  }
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
-.content{
-    max-width: 800px;
-    margin:auto;
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
 }
 
 .nav {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    background-color: darkgray;
+  background-color: darkgray;
 
-        &__link {
-        color: white;
-        text-decoration: none;
-        margin: 10px;
-        }
+  &__link {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
 }
 
 .title {
-    background-image: url(welcome.jpg);
-    height: 23rem;
-    background-size: cover;
-    background-position: center;
+  background-image: url(welcome.jpg);
+  height: 23rem;
+  background-size: cover;
+  background-position: center;
 
-    &__main {
-        color: white;
-        font-size: 80px;
-        text-align: center;
-        padding-top: 40px;
-
-        }
-    }
-.title__sub {
-    color: beige;
-    font-size: 40px;
+  &__main {
+    color: white;
+    font-size: 80px;
     text-align: center;
+    padding-top: 40px;
+  }
+}
+.title__sub {
+  color: beige;
+  font-size: 40px;
+  text-align: center;
 }
 
 .plot {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(219, 206, 190);
-    height: 350px;
-    z-index: 99;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(219, 206, 190);
+  height: 350px;
+  z-index: 99;
 
-    &__title {
-        // padding-top: 20rem;
-        columns: black;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-    }
+  &__title {
+    // padding-top: 20rem;
+    columns: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .plot__sub {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .plot__sub--text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
-    height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  height: 9rem;
 }
 
 .plot__title--subtitle {
-    text-align: center;
-    padding-top: 30px;
+  text-align: center;
+  padding-top: 30px;
 }
 
-
 .plot__sub--pic {
-    // background: url(welcome.jpg);
-    // float: center;
-    // padding-bottom:80px;
-    // padding-left: 50px;
-    margin-right: 2rem;
-    padding-bottom: 2rem;
-
+  // background: url(welcome.jpg);
+  // float: center;
+  // padding-bottom:80px;
+  // padding-left: 50px;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 .characters {
-    background-image: url(rey-standing.jpg);
-    height: 23rem;
-    background-size: cover;
-    background-position: center;
-        
-        &__content {
-            height: 21rem;
-            display: flex;
-            flex-direction: column;
-            // justify-content: center;
-            align-items: center;
-            justify-content: space-between;
-            
-        }
+  background-image: url(rey-standing.jpg);
+  height: 23rem;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .characters__title {
-    padding-top: 2rem;
-    font-size: 40px;
+  padding-top: 2rem;
+  font-size: 40px;
 }
 
 .circles {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .circles_smallest1 {
-    background-image: url(luke.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    margin: .4rem;
+  background-image: url(luke.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin: 0.4rem;
 }
 
 .circles_small1 {
-    background-image: url(leia.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    margin: .4rem;
+  background-image: url(leia.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 0.4rem;
 }
 .circles_medium1 {
-    background-image: url(finn.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    margin: .4rem;
+  background-image: url(finn.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin: 0.4rem;
 }
 
 .circles_large {
-    background-image: url(rey.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    margin: .4rem;
+  background-image: url(rey.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin: 0.4rem;
 }
 
 .circles_small {
-    background-image: url(kylo.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    margin: .4rem;
+  background-image: url(kylo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 0.4rem;
 }
 .circles_medium {
-    background-image: url(isaac.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    margin: .4rem;
+  background-image: url(isaac.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin: 0.4rem;
 }
 
 .circles_smallest {
-    background-image: url(bb8.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    margin: .4rem;
+  background-image: url(bb8.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin: 0.4rem;
+}
+
+.ratings {
+  height: 23rem;
+  background-color: magenta;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
